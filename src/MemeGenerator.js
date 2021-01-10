@@ -10,7 +10,8 @@ class MemeGenerator extends Component {
             bottomText : "",
             image : "",
             height : "" , 
-            width : "" 
+            width : "" ,
+            unit : ""
         }
     }
     onChangeHandler = (e)=>{
@@ -18,7 +19,6 @@ class MemeGenerator extends Component {
         this.setState({
             [e.target.name] : e.target.value,
 })
-    console.log(this.state.image);
     }
     onClickHandler = (e)=>{
         e.preventDefault();
@@ -34,12 +34,18 @@ class MemeGenerator extends Component {
                         <input type="text" className="small" name="height" placeholder="image height" value={this.state.height} onChange={this.onChangeHandler}/>
                         <input type="text" className="small" name="width" placeholder="image width" value={this.state.width} onChange={this.onChangeHandler}/>
                     </div> 
+                    <div className="select">
+                        <select name="unit" value={this.state.unit} onChange={this.onChangeHandler}>
+                            <option value="px">px</option>
+                            <option value="pt">pt</option>
+                        </select>
+                    </div>
                 <div>
-                <button type="submit" onClick={this.onClickHandler}>gen</button>
+                <button type="submit" onClick={this.onClickHandler}>Generate</button>
                 </div>
                 </form>
                 <div className="output" style={{backgroundImage : `url("${this.state.image}")` , backgroundSize: `cover` ,backgroundRepeat : "no-repeat" ,  height : `${this.state.height}` , width: `${this.state.width}`}}>
-                    <h2 className="top">{this.state.topText}</h2>
+                    <h2 className="top" style={{fontSize : `40${this.state.unit}`}}>{this.state.topText}</h2>
                     <h2 className="bottom">{this.state.bottomText}</h2>
                 </div>
 
