@@ -46,7 +46,7 @@ class MemeGenerator extends Component {
                 </form>
                 <div className="output" style={{backgroundImage : `url("${this.state.image}")` , backgroundSize: `cover` ,backgroundRepeat : "no-repeat" ,  height : `${this.state.height}` , width: `${this.state.width}`}}>
                     <h2 className="top" style={{fontSize : `40${this.state.unit}`}}>{this.state.topText}</h2>
-                    <h2 className="bottom">{this.state.bottomText}</h2>
+                    <h2 className="bottom" style={{fontSize : `40${this.state.unit}`}}>{this.state.bottomText}</h2>
                 </div>
 
             </div>
