@@ -22,7 +22,7 @@ button
     outline : none;
     background-color: rgb(211, 226, 211);
     border-radius: 5px;
-    width : 100px;
+    width : 80px;
     color: green;
 }
 button:hover
@@ -47,7 +47,7 @@ button:hover
     margin-right: 10px;
 
 }
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1056px)
 {
     form{
         text-align  : center;
@@ -71,6 +71,10 @@ button:hover
     {
         margin:  10px auto ;
     }
+}
+.select
+{
+    padding : 30px 0px;
 }
 .bottom 
 {
