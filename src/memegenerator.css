@@ -1,0 +1,81 @@
+form{
+    text-align  : center;
+    display : flex;
+    flex-direction: row;
+}
+input
+{
+    border: 0.5px solid rgb(185, 170, 170);
+    justify-items: space-around;
+    /* flex-grow: 1; */
+    /* margin : 0 auto; */
+    margin : 30px;
+    padding : 10px;
+    width: 150px;
+    border-radius: 5px;
+}
+button
+{
+    margin : 30px;
+    padding: 10px;
+    border-radius: none;
+    outline : none;
+    background-color: rgb(211, 226, 211);
+    border-radius: 5px;
+    width : 100px;
+    color: green;
+}
+button:hover
+{    
+    color:rgb(92, 82, 226);
+    background-color : aqua;
+}
+.output 
+{
+    margin : 0 auto;
+}
+.main 
+{
+    width : 100vw;
+
+    background : red;
+}
+.small 
+{
+    display : flex;
+    margin : 10px auto;
+    margin-right: 10px;
+
+}
+@media screen and (max-width: 1000px)
+{
+    form{
+        text-align  : center;
+        display : flex;
+        flex-direction : column;
+    }
+    input
+    {
+        border: 0.5px solid rgb(185, 170, 170);
+        justify-items: space-around;
+        margin : 10px auto;
+        padding : 10px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    button 
+    {
+        margin : 0;
+    }
+    .small 
+    {
+        margin:  10px auto ;
+    }
+}
+.bottom 
+{
+    position : relative;
+    top: 75%;
+    /* background-color : red; */
+    overflow : hidden;
+}
