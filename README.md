@@ -1,6 +1,6 @@
 # Meme Maker using React 
 
-## make meme 
+## Make your fun  meme 
 [Meme Maker](https://meme-mmkr.netlify.app)
 <hr>
 Just copy a image url from google
