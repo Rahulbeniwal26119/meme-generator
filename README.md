@@ -1,9 +1,8 @@
 # Meme Maker using React 
 
 ## make meme 
-<hr>
 [Meme Maker](https://meme-mmkr.netlify.app)
-
+<hr>
 Just copy a image url from google
 
 Enter Text in input forms 
